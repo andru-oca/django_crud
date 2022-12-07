@@ -134,3 +134,16 @@ usaremos PYTHONANYWHERE
 
 importante no tener el venv
 mejor tener el requirements
+
+
+* Clonado de repo en el bash
+* generar un venv 
+    - python -m venv .virtualenvs/code
+    - levantamos el venv
+        - source ~/.virtualenvs/code/bin/activate
+        - pip install -r requirements.txt
+
+* WebApps
+    - realizar una manual deploy
+    <usuario>.pythonanywhere.com. 
+    -  CODE : la ruta de la app
