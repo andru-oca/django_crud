@@ -1,0 +1,69 @@
+{% extends 'base_template.html' %}
+{% block main_sector %}
+<div class="wrapper">
+    <div class="fast_dashboard">
+        <h3>CANTIDAD DE TAREAS PENDIENTES</h3>
+        <h2>{{ cantidad }}</h2>
+        
+        {% if cantidad < 5 %}
+            <ul  class="lista_tareas">
+                {% for tarea in tareas %}
+                    <li>{{ forloop.counter }}:  {{ tarea }}</li>
+                {% endfor %}
+            </ul>
+
+        {% endif %}
+
+        <div>
+            <button><a href="{% url 'create_todo' %}">CREAR TAREA</a></button>
+        </div>
+
+
+    </div>
+    
+    <div class="crud">
+        <div id="details">
+            <div>
+                <p>DESCRIPCION DE LAS TAREAS SELECCIONADAS</p>
+            </div>
+        </div>
+
+        <div class="all_objects">
+            <table>
+                <thead>
+                    <th></th>
+                    <th>NOMBRE TAREA</th>
+                    <th>HORARIO INICIO</th>
+                    <th>FECHA DE INICIO</th>
+                    <th>ACCION</th>
+                </thead>
+                {% for tarea in tareas %}
+                <tbody>
+                    <tr >
+                        <td>
+                            <input type="checkbox" data-id={{ tarea.id }}>
+                        </td>
+                        <td>
+                            {{ tarea.nombre }}
+
+                        </td>
+                        <td>{{ tarea.horario_inicio }}</td>
+                        <td>{{ tarea.dia_realizar }}</td>
+                        <td> 
+                            <button><a href="{% url 'edit_todo' tarea.id %}">EDITAR</a></button>
+                            <button><a href="{% url 'delete_todo' tarea.id %}">BORRAR</a></button>
+                        </td>
+
+                    </tr>
+                </tbody>          
+                {% endfor %}
+                
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+

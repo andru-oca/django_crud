@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+@import url("./tareas.css");
+
+*{
+    margin: 0;
+
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    display: grid;
+    margin: 0;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+
+}
+
+header{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content:space-around;
+    font-size: 2rem ;
+    background-color: black;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited , a:link{
+    color: white;
+}
+
+.wrapper a:visited , .wrapper a:link{
+    color: black;
+}
+
+
+.logo{
+    flex-grow: 2;
+}
+.links{
+    flex-grow: 3;
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header li {
+    list-style: none;
+    color: white;
+}
+
+header img{
+    height: 200px;
+    width: auto;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    text-align: center;
+    background-color: #555;
+    font-size: 1rem;
+    color: white;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 100%;
+}
+
+
+#to_append{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item{
+    font-size: 1rem;
+    margin: 1rem;
+
+}
+
+.inicio{
+    display: flex;
+    flex-direction: column;
+}
+
+.todo_form{
+    display: flex;
+    flex-direction: column;
+
+    justify-content:space-between;
+    align-items: center;
+
+
+}
+
+.todo_form form{
+    text-align: justify;
+
+}
+
+.todo_form input{
+    margin: 1rem;
+    border: none;
+    border-bottom: 1px solid #888;
+    outline: none;
+
+}
+
+.todo_form textarea{
+    border: none;
+    border-bottom: 1px solid #888;
+    outline: none;
+    width: 20rem;
+    height: 2rem;
+}
+
+input[type=submit]{
+    border:1px solid #999 ;
+    border-radius: 5px;
+}
+
+.todo_form a:link , .todo_form a:visited {
+    color: black;
+}
+
+.lista_tareas{
+    text-align: left;
+}

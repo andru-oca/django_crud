@@ -1,0 +1,82 @@
+.wrapper{
+    display: grid;
+    grid-template-columns:1fr 2fr;
+    box-sizing: border-box;
+    height: 90%;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 1rem;
+}
+
+
+
+.fast_dashboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.crud{
+
+    display: flex ;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+#details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.all_objects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-grow: 2;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.all_objects >table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.all_objects >table td {
+    border: none;
+    padding: 10px;
+}
+
+.all_objects >table th{
+    background: lightpink;
+    height: 40px;
+}
+
+
+.all_objects a{
+    text-decoration: none;
+}
+
+.all_objects a:visited ,.all_objects a:link{
+    color: black;
+}
+
+
+.all_objects >table tr:nth-child(even){background-color: #f2f2f2;}
+
+.all_objects >table tr:hover {background-color: #ddd;}
+
+
+.item{
+    text-align: left;
+}
+
+
+input[type=submit]{border:1px solid #999}

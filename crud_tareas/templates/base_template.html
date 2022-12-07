@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "{% static 'css/style.css' %}">
+    <title>Pagina de TO - DO List</title>
+</head>
+<body>
+    <header>
+        <div class="logo"> <a href="{% url 'pagina_inicio' %}"><img src="{% static 'img/totoro.png' %}" alt="totoro"></a></div>
+        <div class="links">
+            <ul>
+                <li><a href="{% url 'noticias_page' %}">Noticias</a></li>
+                <li><a href="{% url 'todo_list' %}">Tareas</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+            {% block main_sector %}
+            {% endblock main_sector %}
+    </main>
+    <footer>
+        <h1> TO-DO lista dev by @Ander ;) </h1>
+    </footer>
+
+<script src="{% static 'js/index.js' %}"></script>
+</body>
+</html>

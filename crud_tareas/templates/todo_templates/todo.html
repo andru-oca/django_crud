@@ -1,0 +1,12 @@
+{% extends 'base_template.html' %}
+{% block main_sector %}
+<div class="todo_form">
+   <form method="POST">
+        
+      {% csrf_token %}
+      {{ form.as_div }}
+
+        <input type="submit" value="{{ value }}">
+   </form>
+</div>
+{% endblock %}

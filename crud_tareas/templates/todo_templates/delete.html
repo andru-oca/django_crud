@@ -1,0 +1,17 @@
+{% extends 'base_template.html' %}
+{% block main_sector %}
+<div class="todo_form">
+    <p>Estas seguro que querés borrar la tarea: {{ tarea }} ? </p>
+
+   <form action="{% url 'delete_todo' tarea.id %}" method="POST">
+        
+      {% csrf_token %}
+
+        <button>
+            <a href="{% url 'todo_list' %}"> CANCELAR </a>
+        </button>  
+        
+        <input type="submit" value="BORRAR" name="confirmar">
+   </form>
+</div>
+{% endblock %}
