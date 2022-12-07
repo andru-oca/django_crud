@@ -57,11 +57,11 @@ function injecter(data){
     
 }
 
+http://ander1987.pythonanywhere.com/api/todo/1/
 
 
 
-
-let base_host = 'http://localhost:8000/api'
+let base_host = 'http://ander1987.pythonanywhere.com/api'
 let todo_list_url = '/todo/'
 let path
 
