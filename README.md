@@ -149,5 +149,5 @@ mejor tener el requirements
     <usuario>.pythonanywhere.com. 
     -  CODE : la ruta de la app
     - static_files
-
+    - adicionales [EXTRA STATICS](https://stackoverflow.com/questions/25375448/django-rest-framework-missing-static-directory)
     - python manage.py collectstatic
