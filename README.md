@@ -147,3 +147,4 @@ mejor tener el requirements
     - realizar una manual deploy
     <usuario>.pythonanywhere.com. 
     -  CODE : la ruta de la app
+    - static_files
