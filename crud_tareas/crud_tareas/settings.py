@@ -24,9 +24,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-899kz9_ebnu^#u%-)9y((ga1&i#snfxrs7shz3u$3q8ngd=3wy'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['ander1987.pythonanywhere.com']
+TEMPLATE_DEBUG = True
+
+# Agregar los hosts
+ALLOWED_HOSTS = ['ander1987.pythonanywhere.com', '*']
 
 
 # Application definition
@@ -41,6 +44,23 @@ INSTALLED_APPS = [
     'rest_framework',
     'todo_list',
 ]
+
+
+# Agregando el rest framework data
+
+REST_FRAMEWORK = {
+    # Use hyperlinked styles by default.
+    # Only used if the `serializer_class` attribute is not set on a view.
+    'DEFAULT_MODEL_SERIALIZER_CLASS':
+        'rest_framework.serializers.HyperlinkedModelSerializer',
+
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

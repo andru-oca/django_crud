@@ -143,8 +143,11 @@ mejor tener el requirements
         - source ~/.virtualenvs/code/bin/activate
         - pip install -r requirements.txt
 
+
 * WebApps
     - realizar una manual deploy
     <usuario>.pythonanywhere.com. 
     -  CODE : la ruta de la app
     - static_files
+
+    - python manage.py collectstatic
