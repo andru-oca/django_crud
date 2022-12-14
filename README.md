@@ -261,10 +261,20 @@ mejor tener el requirements
         - pip install -r requirements.txt
 
 
+
 * WebApps
     - realizar una manual deploy
+
+    - CODE :: COLOCAR EL PATH DEL REPOSITORIO
+    - VIRTUALENV :: COLOCAR LA RUTA DEL VIRTUALENV
+        ie: /home/ander2022/.virtualenvs/code
+
     <usuario>.pythonanywhere.com. 
     -  CODE : la ruta de la app
+
+    - WSGI configuracion solo para DJANGO
+    - CUANDO HACEMOS EL DEPLOY, Y EL ARCHIVO WSGI ES EL QUE TE FALLE POR QUE EL NOMBRE DE MYSITE NO ES CORRECTO >> COLOCAR EL NOMBRE DE TU PROYECTO.
+        - crud_tareas.settings
     - static_files
     - adicionales [EXTRA STATICS](https://stackoverflow.com/questions/25375448/django-rest-framework-missing-static-directory)
     - python manage.py collectstatic
