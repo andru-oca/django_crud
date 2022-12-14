@@ -241,6 +241,7 @@ CREAR API REST
 
 DEPLOY
 
+[URL ZAPPY FOR DEPLOY](https://zappycode.com/tutorials/deploy-django-project-on-pythonanywhere)
 Es importante tenerlo en el main de tu repo GITHUB
 usaremos PYTHONANYWHERE
 
@@ -253,6 +254,7 @@ mejor tener el requirements
 
 * Clonado de repo en el bash
 * generar un venv 
+    - IMPORTANTE!! ->> ESTO ES LINUX
     - python -m venv .virtualenvs/code
     - levantamos el venv
         - source ~/.virtualenvs/code/bin/activate
