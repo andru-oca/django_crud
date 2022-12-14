@@ -275,6 +275,29 @@ mejor tener el requirements
     - WSGI configuracion solo para DJANGO
     - CUANDO HACEMOS EL DEPLOY, Y EL ARCHIVO WSGI ES EL QUE TE FALLE POR QUE EL NOMBRE DE MYSITE NO ES CORRECTO >> COLOCAR EL NOMBRE DE TU PROYECTO.
         - crud_tareas.settings
+
+    CONFIG:
+    ```
+            # +++++++++++ DJANGO +++++++++++
+        # To use your own django app use code like this:
+        import os
+        import sys
+        #
+        # assuming your django settings file is at '/home/ander1987/mysite/mysite/settings.py'
+        # and your manage.py is is at '/home/ander1987/mysite/manage.py'
+        path = '/home/ander1987/django_crud/crud_tareas'
+
+        if path not in sys.path:
+            sys.path.append(path)
+
+        os.environ['DJANGO_SETTINGS_MODULE'] = 'crud_tareas.settings'
+        #
+        # then:
+        from django.core.wsgi import get_wsgi_application
+        application = get_wsgi_application()
+
+    ```
+
     - static_files
     - adicionales [EXTRA STATICS](https://stackoverflow.com/questions/25375448/django-rest-framework-missing-static-directory)
     - python manage.py collectstatic

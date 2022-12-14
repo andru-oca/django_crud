@@ -94,7 +94,7 @@ fetch(URL)
 .catch(e => console.log(e))
 
 
-let base_host = 'http://ander1987.pythonanywhere.com/api/'
+let base_host = 'http://ander2022.pythonanywhere.com/api/'
 let todo_list_url = 'todo/'
 
 let path
