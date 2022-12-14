@@ -247,6 +247,9 @@ usaremos PYTHONANYWHERE
 importante no tener el venv
 mejor tener el requirements
 
+* CREAR CUENTA EN PYTHONANYWHERE
+* CREAR APP >> WEB
+* CREAR CONSOLE >> NEW CONSOLE $BASH
 
 * Clonado de repo en el bash
 * generar un venv 
